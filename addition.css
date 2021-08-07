@@ -1,0 +1,174 @@
+/* some of common */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.font-XL {
+    font-size: 40px;
+}
+
+.font-Large {
+    font-size: 30px;
+}
+
+.font-Mid {
+    font-size: 25px;
+}
+
+.font-Small {
+    font-size: 20px;
+}
+
+.center {
+    text-align: center;
+}
+
+.dis-col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/* main */
+
+body {
+    background: linear-gradient(to right, #d6ae7b, #eacda3);
+    background-size: 500%;
+    animation: rotate 5s infinite alternate;
+}
+
+@keyframes rotate {
+    0% {
+        background-position: left;
+    }
+    100% {
+        background-position: right;
+    }
+}
+
+.main {
+    margin: auto;
+    margin-top: 10px;
+    width: max-content;
+}
+
+.gameBox {
+    width: 600px;
+    margin: 10px 10px;
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+#closeSett {
+    display: none;
+}
+
+select {
+    display: none;
+    padding: 2px;
+    margin-top: 10px;
+    color: white;
+    background-color: rgb(37, 37, 37);
+    border: 2px solid black;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+hr {
+    margin: 5px 0;
+}
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 50px 0;
+}
+
+.game {
+    text-align: left;
+}
+
+.sumBox {
+    margin: 10px 0;
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 10px;
+    font-size: 30px;
+    text-align: center;
+}
+
+.input {
+    padding: 3px 10px;
+    margin: 5px;
+    width: 300px;
+    height: 30px;
+    font-size: 20px;
+    border-radius: 10px;
+    border: 2px solid black;
+}
+
+.button {
+    padding: 3px 10px;
+    margin: 5px;
+    width: 300px;
+    height: 30px;
+    font-size: 20px;
+    border-radius: 10px;
+    border: 2px solid black;
+}
+
+.wrong {
+    margin: 10px;
+    box-shadow: 0px 0px 20px red;
+}
+
+.tip {
+    width: 80%;
+    margin: auto;
+    text-align: left;
+}
+
+@media only screen and (max-width:700px) {
+    .gameBox {
+        width: auto;
+    }
+    .tip {
+        width: auto;
+        margin: 15px;
+        text-align: left;
+    }
+}
+
+@media only screen and (max-width:550px) {
+    .gameBox {
+        margin: 0 20px;
+        /* margin: auto; */
+        width: auto;
+    }
+    .tip {
+        width: auto;
+        margin: 15px;
+        text-align: left;
+    }
+    .main {
+        margin: auto;
+        margin-top: 10px;
+        width: 100%;
+    }
+    .button {
+        margin: 5px;
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width:450px) {
+    .input {
+        margin: 5px;
+        width: 90%;
+    }
+}
